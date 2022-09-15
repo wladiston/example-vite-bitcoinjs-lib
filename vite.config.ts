@@ -17,7 +17,7 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    exclude: ["crypto"],
+    include: ["tiny-secp256k1 > crypto-browserify"],
     esbuildOptions: {
       plugins: [
         NodeGlobalsPolyfillPlugin({
