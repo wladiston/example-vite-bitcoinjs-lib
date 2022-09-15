@@ -11,7 +11,13 @@ import { NodeModulesPolyfillPlugin } from "@esbuild-plugins/node-modules-polyfil
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), wasm(), topLevelAwait()],
+  resolve: {
+    alias: {
+      crypto: "crypto-browserify",
+    },
+  },
   optimizeDeps: {
+    exclude: ["crypto"],
     esbuildOptions: {
       plugins: [
         NodeGlobalsPolyfillPlugin({
