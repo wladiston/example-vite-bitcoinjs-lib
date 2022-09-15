@@ -1,5 +1,5 @@
 {
-  "name": "vite-bitcoinjs-lib",
+  "name": "example-vite-bitcoinjs-lib",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bitcoinjs-lib": "^6.0.2",
+    "ecpair": "^2.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tiny-secp256k1": "^2.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
